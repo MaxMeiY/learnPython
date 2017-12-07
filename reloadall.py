@@ -33,7 +33,7 @@ def reload_all(*args):
 def tester(reloader, modname):
     import importlib, sys
     if len(sys.argv) > 1:
-        modname = sys.argv.argv[1]
+        modname = sys.argv[1]
     module = importlib.import_module(modname)
     reloader(module)
 
